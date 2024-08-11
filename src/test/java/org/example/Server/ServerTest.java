@@ -32,6 +32,4 @@ public class ServerTest {
         assertEquals("serverLog.txt",path);
 
     }
-
-
 }

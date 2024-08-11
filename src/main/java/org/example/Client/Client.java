@@ -41,7 +41,6 @@ public class Client {
             scanner = new Scanner(System.in);
 
             String msg;
-            // Узнаем имя, приветствуем
             System.out.print("Введите Ваше имя: ");
             msg = scanner.nextLine();
 
@@ -62,7 +61,6 @@ public class Client {
         new Client();
     }
 
-    //читаем сообщения из сокета
     private class ReadChat extends Thread {
         @Override
         public void run() {
@@ -85,7 +83,6 @@ public class Client {
         }
     }
 
-    //пишем сообщения в сокет
     public class WriteChat extends Thread {
         @Override
         public void run() {
